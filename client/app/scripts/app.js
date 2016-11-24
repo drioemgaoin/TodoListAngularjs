@@ -1,15 +1,7 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name clientApp
- * @description
- * # clientApp
- *
- * Main module of the application.
- */
 angular
-  .module('clientApp', [
+  .module('app', [
     'ngAnimate',
     'ngAria',
     'ngCookies',
@@ -23,13 +15,8 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+        controller: 'mainController',
+        controllerAs: 'ctrl'
       })
       .otherwise({
         redirectTo: '/'

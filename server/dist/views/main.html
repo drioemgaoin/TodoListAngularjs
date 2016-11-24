@@ -1,0 +1,11 @@
+<div>
+  <div class="container">
+    <button ng-click="ctrl.create()">New</button>
+  </div>
+  <div class="container">
+    <div class="todo" ng-repeat="todo in todos">
+      <input class="title" ng-model="todo.title"></input>
+      <textarea class="content" ng-model="todo.content" auto-grow></textarea>
+    </div>
+  </div>
+</div>
